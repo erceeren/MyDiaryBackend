@@ -1,0 +1,24 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "ercee",
+  "password": "4a6ddfaf",
+  "database": "my-diary",
+  "synchronize": false,
+  "migrationsTableName": "custom_migration_table",
+  "entities": [
+    "src/db/entities/*.ts"
+  ],
+  "subscribers": [
+    "src/db/subscribers/*.ts"
+  ],
+  "migrations": [
+    "src/db/migrations/*.ts"
+  ],
+  "cli": {
+    "entitiesDir": "src/db/entities",
+    "migrationsDir": "src/db/migrations",
+    "subscribersDir": "src/db/subscribers"
+  }
+}
